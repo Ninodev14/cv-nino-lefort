@@ -1,0 +1,96 @@
+.separation{
+    width: 2px;
+    height: 175px;
+    background: #9846FF;
+    display: flex;
+    margin-top: 35px;
+
+    
+}
+.photo_perso{
+margin-left: 8vw;
+
+margin-top: 40px;
+width: 200px;
+height: fit-content;
+}
+
+h2{
+    transition: 200ms;
+    color: #FFF;
+    font-family: bat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h2:hover{
+    color: #D2AEFF;
+}
+
+p{
+    transition: 200ms;
+}
+p:hover{
+    color: #9846FF;
+}
+
+.cross-1{
+margin: auto;
+margin-top: 13vw;
+width: 600px;
+height: 2px;
+align-items: center;
+background: #9846FF;
+transform: rotate(30deg);
+}
+.cross-2{
+    margin: auto;
+    width: 600px;
+    height: 2px;
+    align-items: center;
+    background: #9846FF;
+    transform: rotate(150deg);
+    }
+
+.border{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    margin-top: -175px;
+    }
+
+.border .cross-top{
+    float: top;
+    text-align: center;
+}
+.border .cross-bot{
+    float: bottom;
+    text-align: center;
+}
+.border .cross-left{
+    float: left;
+
+}
+.border .cross-right{
+    float: right;
+}
+
+.pub-img{
+    margin-left: 3vw;
+    width: 40px;
+    height: fit-content;
+    margin-bottom: 20px;
+    transition: 200ms;
+    border-radius: 30px;
+}
+
+.pub-img:hover{
+    
+    background-color: #9846FF;
+}
+
+.pub{
+    margin-top: 35px;
+}
+
