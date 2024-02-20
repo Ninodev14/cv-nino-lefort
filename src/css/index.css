@@ -1,18 +1,87 @@
-.container-home{
+.container-home {
     width: 100%;
     display: flex;
     height: 100vh;
 }
 
 .container-home-nav {
-    width: 50%;
+    width: 80%;
 }
 
 .container-home-head-presentation {
     width: 50%;
+    display: flex;
 }
 
-img .container-home-head-presentation {
+.container-home-head-presentation img {
     width: auto;
     height: 100vh;
+}
+
+.nav-home nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 70vh;
+    justify-content: space-around;
+}
+
+.nav-home nav .nav-home-title {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.cross {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.cross:before,
+.cross:after {
+    content: '';
+    position: absolute;
+    background-color: var(--rose);
+}
+
+.cross:before {
+    width: 2px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.cross:after {
+    width: 30px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+
+.nav-home nav .nav-home-title:hover .cross{
+    transform: rotate(-45deg); 
+}
+
+.nav-home nav .nav-home-title:hover .cross:before {
+    height: 20px;
+    transform: rotate(95deg) translateX(-50%);
+}
+
+.nav-home nav .nav-home-title:hover .cross:after {
+    width: 21px;
+    transform: rotate(90deg) translateY(-50%);
+}
+
+a:hover{
+text-shadow: 0px 0px 7.1px #FFF;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #FFF;
 }

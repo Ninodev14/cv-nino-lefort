@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+
+.title {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contenaire-width {
+    width: calc(100% - 60px);
+    margin-left: 20px;
+}

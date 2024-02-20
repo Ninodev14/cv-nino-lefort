@@ -1,0 +1,49 @@
+.projet-list {
+    padding-left: 10px;
+    border: 2px solid transparent;
+    /* Définissez la bordure sur transparent */
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px var(--rose),
+        0 0 30px var(--rose) inset;
+    outline: 2px solid var(--rose);
+}
+
+.espacement-projet-list-v {
+    margin-top: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.projet-list img {
+    border-radius: 0px 20px 20px 0px;
+    height: 330px;
+}
+
+.title-explication {
+    width: 60%;
+}
+
+.bottom-projet-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+}
+
+.buton-project {
+    background-color: black;
+    border-radius: 27px;
+    border: 3px solid #FFF;
+    padding: 6px 6px 6px 6px;
+    cursor: pointer;
+}
