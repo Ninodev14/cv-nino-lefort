@@ -75,8 +75,9 @@ header .separation {
 }
 
 .barre-toggle {
-    height: 2px;
+    height: 3px;
     width: 30px;
+    border: 1px solid var(--black);
     background-color: var(--white);
     z-index: 1000;
 }
