@@ -8,7 +8,7 @@ body {
 }
 
 .contenaire-width {
-    width: calc(100% - 60px);
+    width: calc(100% - 40px);
     margin-left: 20px;
 }
 
@@ -47,7 +47,7 @@ header .separation {
 }
 
 #menu-tel {
-    display: flex;
+    display: none;
     flex-direction: row;
     position: fixed;
     flex-direction: column;

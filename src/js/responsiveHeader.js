@@ -7,13 +7,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     menuToggle.addEventListener('click', function () {
         if (!isMenuOpen) {
-            menu.style.opacity = '1';
-            body.classList.add('no-scroll'); // Ajoutez la classe pour empêcher le défilement
+            menu.style.display = 'flex';
+            body.classList.add('no-scroll');
             isMenuOpen = true;
+            setTimeout(function () {
+                menu.style.opacity = '1';
+            }, 1);
+
         } else {
+            setTimeout(function () {
+                menu.style.display = 'none';
+                body.classList.remove('no-scroll');
+                isMenuOpen = false;
+            }, 300);
             menu.style.opacity = '0';
-            body.classList.remove('no-scroll'); // Retirez la classe pour activer le défilement
-            isMenuOpen = false;
         }
     });
 });
