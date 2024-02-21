@@ -1,12 +1,29 @@
-.contenaire-propos-text{
+.contenaire-propos-text {
     width: 60%;
 }
-.contenaire-propos-img{
+
+.contenaire-propos-img {
     width: 30%;
     height: 30%;
 }
-.contenaire-propos{
+
+.contenaire-propos {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+    .contenaire-propos {
+        flex-direction: column-reverse;
+    }
+    .contenaire-propos-img {
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .contenaire-propos-text {
+        width: 100%;
+    }
 }
