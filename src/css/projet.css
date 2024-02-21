@@ -93,4 +93,8 @@
         width: calc(100% - 20px);
     }
 
+    .text {
+        margin-left: -10px;
+    }
+
 }
