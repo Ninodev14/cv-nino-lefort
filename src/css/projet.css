@@ -1,19 +1,19 @@
 .projet-list {
-    padding-left: 10px;
+    padding-left: 20px;
     border: 2px solid transparent;
     /* Définissez la bordure sur transparent */
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     box-shadow: 0 0 20px var(--rose),
         0 0 30px var(--rose) inset;
     outline: 2px solid var(--rose);
 }
 
 .espacement-projet-list-v {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .text {
@@ -29,6 +29,7 @@
 }
 
 .title-explication {
+    margin-top: 10px;
     width: 60%;
 }
 
@@ -54,6 +55,7 @@
         width: 80%;
     }
 }
+
 @media screen and (max-width: 930px) {
     .title-explication {
         width: 100%;
@@ -68,12 +70,14 @@
     .title-explication {
         width: 100%;
     }
+
     .projet-list img {
         border-radius: 20px 20px 0px 0px;
         height: auto;
-        margin-left: -10px;
+        margin-left: -20px;
     }
-    .bottom-projet-list{
-        margin-top: 10px;
+
+    .bottom-projet-list {
+        margin-top: 20px;
     }
 }
