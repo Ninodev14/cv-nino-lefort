@@ -63,9 +63,13 @@
     transition: 0.3s;
 }
 
+.title-home{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
-.nav-home nav .nav-home-title:hover .cross{
-    transform: rotate(-45deg); 
+.nav-home nav .nav-home-title:hover .cross {
+    transform: rotate(-45deg);
 }
 
 .nav-home nav .nav-home-title:hover .cross:before {
@@ -76,4 +80,18 @@
 .nav-home nav .nav-home-title:hover .cross:after {
     width: 21px;
     transform: rotate(90deg) translateY(-50%);
+}
+
+@media screen and (max-width: 1000px) {
+    .container-home-head-presentation {
+        display: none;
+    }
+    .container-home-nav {
+        width: 100%;
+    }
+    .nav-home nav {
+
+        margin-left: 0px;
+        height: 70vh;
+    }
 }
