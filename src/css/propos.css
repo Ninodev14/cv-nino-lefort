@@ -1,0 +1,12 @@
+.contenaire-propos-text{
+    width: 60%;
+}
+.contenaire-propos-img{
+    width: 30%;
+    height: 30%;
+}
+.contenaire-propos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

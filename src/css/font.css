@@ -7,7 +7,7 @@ a {
 h1 {
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 67.757px;
+    font-size: 68px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -16,22 +16,32 @@ h1 {
 h2 {
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-size: 44px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
+h3 {
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
 p {
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
 
 }
 
-button p{
+a p{
     font-size: 15px;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
@@ -39,3 +49,12 @@ button p{
     font-weight: 400;
 
 }
+a{
+    transition: 0.2s;
+}
+
+a:hover{
+    text-shadow: 0px 0px 7.1px #FFF;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    }

@@ -47,3 +47,33 @@
     padding: 6px 6px 6px 6px;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 1110px) {
+    .title-explication {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 930px) {
+    .title-explication {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .projet-list {
+        flex-direction: column-reverse;
+    }
+
+    .title-explication {
+        width: 100%;
+    }
+    .projet-list img {
+        border-radius: 20px 20px 0px 0px;
+        height: auto;
+        margin-left: -10px;
+    }
+    .bottom-projet-list{
+        margin-top: 10px;
+    }
+}
