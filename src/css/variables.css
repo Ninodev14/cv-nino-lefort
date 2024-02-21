@@ -36,6 +36,14 @@ header .separation {
 }
 
 
+.barre-toggle {
+    height: 4px;
+    width: 30px;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    transition: transform 0.3s ease; 
+}
+
 #menu-toggle {
     margin-top: 20px;
     height: 20px;
@@ -45,6 +53,21 @@ header .separation {
     right: 20px;
     position: fixed;
     z-index: 1000;
+    cursor: pointer; 
+}
+
+/* Transformation de la barre en croix */
+#menu-toggle.active .barre-toggle:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+#menu-toggle.active .barre-toggle:nth-child(2) {
+    opacity: 0; 
+}
+
+#menu-toggle.active .barre-toggle:nth-child(3) {
+
+    transform: rotate(-45deg) translate(6px, -5px);
 }
 
 #menu-pc {
@@ -75,12 +98,6 @@ header .separation {
     align-items: center;
 }
 
-.barre-toggle {
-    height: 4px;
-    width: 30px;
-    border: 1px solid var(--black);
-    background-color: var(--white);
-}
 
 header .separation-tel {
     width: 30px;

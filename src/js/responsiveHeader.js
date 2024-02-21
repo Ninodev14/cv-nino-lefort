@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             menu.style.display = 'flex';
             body.classList.add('no-scroll');
             isMenuOpen = true;
+            menuToggle.classList.toggle("active");
             setTimeout(function () {
                 menu.style.opacity = '1';
             }, 1);
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 body.classList.remove('no-scroll');
                 isMenuOpen = false;
             }, 300);
+            menuToggle.classList.toggle("active");
             menu.style.opacity = '0';
         }
     });
