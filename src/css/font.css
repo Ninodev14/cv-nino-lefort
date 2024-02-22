@@ -61,6 +61,15 @@ p {
     width: 100%;
 }
 
+.link-actif:before{
+    width: 100%;
+}
+.link-actif{
+    text-shadow: 0px 0px 7.1px #FFF;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+}
+
 a{
     color: #FFF;
     transition: 0.2s;
