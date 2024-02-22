@@ -5,7 +5,7 @@ function handleScrollAppear() {
         const position = element.getBoundingClientRect();
 
         // Check if the element is in the viewport
-        if (position.top <= window.innerHeight * 0.90) {
+        if (position.top <= window.innerHeight * 0.98) {
             element.style.opacity = 1;
             element.style.transform = 'translateY(0)';
         } else {
