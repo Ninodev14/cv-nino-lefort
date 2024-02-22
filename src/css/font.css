@@ -40,10 +40,26 @@ p {
 
 
 
-.p-lien{
-    text-decoration: underline;
+.p-lien, a h3{
+    position: relative;
     display: flex;
     align-items: center;
+    transition: text-decoration 0.3s;
+    width: fit-content;
+}
+.p-lien::before, a h3::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--blue);
+    transition: width 0.3s ease; 
+}
+
+.p-lien:hover::before, a h3:hover::before {
+    width: 100%;
 }
 
 a{

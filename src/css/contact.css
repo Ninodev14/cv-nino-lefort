@@ -1,7 +1,6 @@
-.link-contact{
+.link-contact p{
     margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    justify-content: space-between;
+}
+.link-contact{
+height: 300px;
 }
