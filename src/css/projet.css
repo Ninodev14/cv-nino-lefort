@@ -12,6 +12,7 @@
         0 0 30px var(--rose) inset;
     outline: 2px solid var(--rose);
     position: relative;
+    transition: opacity 0.8s, transform 0.8s;
 }
 
 .espacement-projet-list-v {
