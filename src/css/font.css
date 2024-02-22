@@ -44,7 +44,6 @@ p {
     position: relative;
     display: flex;
     align-items: center;
-    transition: text-decoration 0.3s;
     width: fit-content;
 }
 .p-lien::before, a h3::before {
@@ -81,5 +80,8 @@ a:hover{
         }
         h2 {
             font-size: 36px;
+        }
+        .p-lien::before{
+            width: 100%;
         }
     }
