@@ -38,16 +38,16 @@ p {
 
 }
 
-a p{
-    font-size: 15px;
-    color: #FFF;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
 
+
+.p-lien{
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
 }
 
 a{
+    color: #FFF;
     transition: 0.2s;
 }
 
@@ -62,5 +62,8 @@ a:hover{
     @media screen and (max-width: 825px) {
         h1 {
             font-size: 50px;
+        }
+        h2 {
+            font-size: 36px;
         }
     }

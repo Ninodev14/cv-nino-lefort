@@ -12,6 +12,12 @@ body {
     margin-left: 20px;
 }
 
+.icon{
+    height: 18px;
+    width: auto;
+    margin-left: 5px;
+}
+
 header {
     top: 0;
     width: 100%;
