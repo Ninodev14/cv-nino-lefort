@@ -4,12 +4,20 @@ document.addEventListener('DOMContentLoaded', function () {
     var html = document.documentElement;
 
     var isMenuOpen = false;
+    var lastClickTime = 0;
+    var minDelay = 300; // Minimum delay in milliseconds
 
     menuToggle.addEventListener('click', function () {
+        var now = new Date().getTime();
+        if (now - lastClickTime < minDelay) {
+            return; // Ignore the click if the minimum delay hasn't passed
+        }
+
+        lastClickTime = now;
+
         if (!isMenuOpen) {
             menu.style.display = 'flex';
             html.classList.add('no-scroll');
-
             menuToggle.classList.toggle("active");
             setTimeout(function () {
                 menu.style.opacity = '1';
@@ -18,12 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         } else {
             setTimeout(function () {
+
                 menu.style.display = 'none';
-                html.classList.remove('no-scroll');
             }, 300);
             menuToggle.classList.toggle("active");
-            menu.style.opacity = '0';
             isMenuOpen = false;
+            menu.style.opacity = '0';
+            html.classList.remove('no-scroll');
         }
     });
 });
