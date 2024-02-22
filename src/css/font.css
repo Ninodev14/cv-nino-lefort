@@ -40,13 +40,13 @@ p {
 
 
 
-.p-lien, a h3{
+.p-lien, a h3,.p-lien-mention{
     position: relative;
     display: flex;
     align-items: center;
     width: fit-content;
 }
-.p-lien::before, a h3::before {
+.p-lien::before, a h3::before, .p-lien-mention::before {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -57,7 +57,7 @@ p {
     transition: width 0.3s ease; 
 }
 
-.p-lien:hover::before, a h3:hover::before {
+.p-lien:hover::before, a h3:hover::before, .p-lien-mention:hover::before {
     width: 100%;
 }
 

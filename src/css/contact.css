@@ -2,5 +2,14 @@
     margin-top: 30px;
 }
 .link-contact{
-height: 300px;
+height: 350px;
+}
+
+.p-lien-mention {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.p-lien-mention a{
+    color: #bbbbbb;
 }
