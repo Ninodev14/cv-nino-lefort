@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://https://nino-lefort.netlify.app//sitemap.xml
