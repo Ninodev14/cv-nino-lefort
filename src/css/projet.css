@@ -59,6 +59,10 @@
     padding: 6px 6px 6px 6px;
     cursor: pointer;
 }
+.buton-project p{
+    text-align: center;
+}
+
 
 
 @media screen and (max-width: 950px) {
