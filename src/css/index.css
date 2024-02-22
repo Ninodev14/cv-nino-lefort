@@ -74,12 +74,12 @@
 
 .nav-home nav .nav-home-title:hover .cross:before {
     height: 20px;
-    transform: rotate(95deg) translateX(-50%);
+    transform: rotate(90deg);
 }
 
 .nav-home nav .nav-home-title:hover .cross:after {
-    width: 21px;
-    transform: rotate(90deg) translateY(-50%);
+    width: 20px;
+    transform: rotate(90deg);
 }
 
 @media screen and (max-width: 1000px) {
