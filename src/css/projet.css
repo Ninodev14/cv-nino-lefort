@@ -37,6 +37,10 @@
     position: absolute;
 }
 
+.img-link-project::after {
+    box-shadow: inset 500em 1000em gold;
+}
+
 .title-explication {
     margin-top: 10px;
     width: 60%;
@@ -60,7 +64,7 @@
     cursor: pointer;
 }
 
-.buton-project p{
+.buton-project p {
     text-align: center;
 }
 
