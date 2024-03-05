@@ -83,11 +83,10 @@ header .separation {
 }
 
 #menu-tel {
-    overflow-y: auto;
     display: none;
     flex-direction: row;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: var(--black);
     opacity: 0;
@@ -112,7 +111,7 @@ header .separation-tel {
 }
 
 .no-scroll {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 825px) {

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (!isMenuOpen) {
             menu.style.display = 'flex';
-            document.body.classList.add('no-scroll');
+            html.classList.add('no-scroll');
             menuToggle.classList.toggle("active");
             setTimeout(function () {
                 menu.style.opacity = '1';
