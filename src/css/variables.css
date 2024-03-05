@@ -112,7 +112,7 @@ header .separation-tel {
 }
 
 .no-scroll {
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 @media screen and (max-width: 825px) {
