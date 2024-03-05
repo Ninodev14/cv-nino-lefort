@@ -83,6 +83,7 @@ header .separation {
 }
 
 #menu-tel {
+    overflow-y: auto;
     display: none;
     flex-direction: row;
     flex-direction: column;
