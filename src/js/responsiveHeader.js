@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             menuToggle.classList.toggle("active");
             isMenuOpen = false;
             menu.style.opacity = '0';
-            html.classList.remove('no-scroll');
+            html.style.overflow = 'auto';
         }
     });
 });

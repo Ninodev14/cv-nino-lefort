@@ -6,6 +6,9 @@
     width: 30%;
     height: 30%;
 }
+.contenaire-propos-text-paragraph{
+    display: flex;
+}
 
 .contenaire-propos {
     width: 100%;
