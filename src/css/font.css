@@ -38,6 +38,9 @@ p {
 
 }
 
+strong{
+    font-weight: bold;
+}
 
 
 .p-lien, a h3,.p-lien-mention{

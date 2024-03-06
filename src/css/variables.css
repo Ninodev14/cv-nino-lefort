@@ -12,7 +12,7 @@ body {
     margin-left: 30px;
 }
 
-.icon{
+.icon {
     height: 18px;
     width: auto;
     margin-left: 5px;
@@ -45,7 +45,7 @@ header .separation {
     width: 30px;
     border: 1px solid var(--black);
     background-color: var(--white);
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 #menu-toggle {
@@ -56,7 +56,7 @@ header .separation {
     justify-content: space-between;
     right: 20px;
     position: fixed;
-    cursor: pointer; 
+    cursor: pointer;
     z-index: 1001;
 }
 
@@ -66,7 +66,7 @@ header .separation {
 }
 
 #menu-toggle.active .barre-toggle:nth-child(2) {
-    opacity: 0; 
+    opacity: 0;
 }
 
 #menu-toggle.active .barre-toggle:nth-child(3) {
@@ -111,21 +111,12 @@ header .separation-tel {
     background-color: var(--purpul);
 }
 
-
-.surlignage{
-    position: relative;
-    width: fit-content;
+.contenaire-propos-text-paragraph {
+    margin-bottom: 20px;
 }
-.surlignage::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--blue);
-    transition: width 0.3s ease; 
-    width: 100%;
+
+.surlignage {
+    text-decoration: underline var(--blue);
 }
 
 @media screen and (max-width: 825px) {
@@ -142,6 +133,7 @@ header .separation-tel {
         background-color: initial;
         height: auto;
     }
+
     .title {
         margin-top: 50px;
     }
