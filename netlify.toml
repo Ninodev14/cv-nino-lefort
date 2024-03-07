@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "https://ninolefort.fr/:splat"
-  status = 301
