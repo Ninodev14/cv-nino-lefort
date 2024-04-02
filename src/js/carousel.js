@@ -57,8 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Swipe functionality
     let touchstartX = 0;
     let touchendX = 0;
-    const minSwipeDistance = 50; // La distance minimale de glissement pour déclencher le changement de diapositive
-
+    const minSwipeDistance = 50; 
     carousel.addEventListener('touchstart', function(event) {
         touchstartX = event.changedTouches[0].screenX;
     });
@@ -72,12 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
         isDragging = true;
         mouseX = event.clientX;
         mouseY = event.clientY;
-    });
-
-    carousel.addEventListener('mousemove', function(event) {
-        if (isDragging) {
-            event.preventDefault();
-        }
     });
 
     carousel.addEventListener('mouseup', function(event) {
@@ -114,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
         stopAutoSlide();
         autoSlideInterval = setInterval(() => {
             nextSlide();
-        }, 500000);
+        }, 5000);
     }
 
     function stopAutoSlide() {
