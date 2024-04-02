@@ -8,8 +8,8 @@ body {
 }
 
 .contenaire-width {
-    width: calc(100% - 60px);
-    margin-left: 30px;
+    width: calc(100% - 120px);
+    margin-left: 60px;
 }
 
 .transition-conection {
@@ -17,7 +17,7 @@ body {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: var(--blue);
+    background-color: var(--purpul);
     z-index: 1001;
     display: flex;
     align-content: center;
@@ -31,7 +31,7 @@ body {
     width: 100vw;
     height: 50vh;
     position: fixed;
-    background-color: var(--blue);
+    background-color: var(--purpul);
     transition: 1s;
 }
 
@@ -43,7 +43,7 @@ body {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: var(--blue);
+    background-color: var(--purpul);
     z-index: 1001;
     align-content: center;
     justify-content: center;
