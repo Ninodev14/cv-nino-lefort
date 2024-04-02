@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
     prevBtn.addEventListener('click', prevSlide);
     nextBtn.addEventListener('click', nextSlide);
 
-    // Create dots
     for (let i = 0; i < totalSlides; i++) {
         const dot = document.createElement('span');
         dot.classList.add('dot');
@@ -54,10 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const dots = document.querySelectorAll('.dot');
     updateDots(currentIndex);
 
-    // Swipe functionality
     let touchstartX = 0;
     let touchendX = 0;
-    const minSwipeDistance = 50; 
+    const minSwipeDistance = 20; 
     carousel.addEventListener('touchstart', function(event) {
         touchstartX = event.changedTouches[0].screenX;
     });
