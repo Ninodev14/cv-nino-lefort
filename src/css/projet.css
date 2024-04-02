@@ -55,19 +55,6 @@
     width: calc(100% - 350px);
 }
 
-.buton-project {
-    display: flex;
-    background-color: black;
-    border-radius: 27px;
-    border: 3px solid #FFF;
-    padding: 6px 6px 6px 6px;
-    cursor: pointer;
-}
-
-.buton-project p {
-    text-align: center;
-}
-
 
 @media screen and (max-width: 950px) {
     .projet-list {
