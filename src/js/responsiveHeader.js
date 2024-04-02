@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var isMenuOpen = false;
     var lastClickTime = 0;
-    var minDelay = 300; // Minimum delay in milliseconds
+    var minDelay = 300;
 
     menuToggle.addEventListener('click', function () {
         var now = new Date().getTime();
         if (now - lastClickTime < minDelay) {
-            return; // Ignore the click if the minimum delay hasn't passed
+            return; 
         }
 
         lastClickTime = now;
