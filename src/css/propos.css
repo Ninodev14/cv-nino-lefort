@@ -171,16 +171,3 @@
         font-size: 40px;
     }
 }
-
-.cascade-text-index {
-    position: absolute;
-    right: 10px;
-    width: auto;
-    height: auto;
-}
-
-@media screen and (max-width: 1286px) {
-    .cascade-text-index {
-        display: none;
-    }
-}
