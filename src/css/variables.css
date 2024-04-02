@@ -48,7 +48,7 @@ body {
     align-content: center;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
     transform: translateY(100vh);
 }
 

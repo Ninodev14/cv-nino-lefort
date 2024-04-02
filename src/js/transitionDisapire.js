@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
       disapirePage.classList.add('start');
       setTimeout(function() {
         window.location.href = this.getAttribute('href');
-      }.bind(this), 500); 
+      }.bind(this), 300); 
     });
   });
 });
