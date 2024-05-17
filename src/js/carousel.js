@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let currentIndex = 0;
     let autoSlideInterval;
+    let isDragging = false;
+    let mouseX = 0;
+    let mouseY = 0;
 
     function showSlide(index) {
         slides.forEach((slide) => {
@@ -16,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updateDots(index) {
+        const dots = document.querySelectorAll('.dot');
         dots.forEach((dot, i) => {
             dot.classList.toggle('active', i === index);
         });
@@ -114,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
         stopAutoSlide();
         autoSlideInterval = setInterval(() => {
             nextSlide();
-        }, 500000);
+        }, 5000);
     }
 
     function stopAutoSlide() {

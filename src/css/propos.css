@@ -1,5 +1,6 @@
 .contenaire-propos-text-paragraph {
     display: flex;
+    margin-top: 100px;
 }
 
 .contenaire-propos {
@@ -98,6 +99,8 @@
 }
 
 
+
+
 .carousel-slide img {
     border-radius: 20px 0px 0px 20px;
     height: 100%;
@@ -106,9 +109,10 @@
 }
 
 .carousel-dots {
-    position: relative;
+
     text-align: center;
     margin-top: 20px;
+    
 }
 
 .dot {
@@ -116,20 +120,22 @@
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    background-color: var(--gray);
+    background-color: var(--white);
     border-radius: 50%;
     cursor: pointer;
 }
 
 .dot.active {
-    background-color: var(--orange);
+    background-color: var(--purpul);
 }
 
 .prev {
+    z-index: 2;
     left: 0;
 }
 
 .next {
+    z-index: 2;
     right: 0;
 }
 
@@ -192,7 +198,10 @@ text-align: right;
     .carousel-slide img {
         margin-left: 0%;
         max-width: 100%;
+    }
 
-
+    .carousel-dots{
+        margin-top: 0px;
+        transform: translateY(-10px);
     }
 }
