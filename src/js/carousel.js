@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.carousel-slide');
-    const slidesContent = document.querySelectorAll('.carousel-slide-content');
     const totalSlides = slides.length;
     const dotsContainer = document.querySelector('.carousel-dots');
     const prevBtn = document.querySelector('.prev');
@@ -11,26 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let autoSlideInterval;
 
     function showSlide(index) {
-        const prevIndex = (index - 1 + totalSlides) % totalSlides;
-        const nextIndex = (index + 1) % totalSlides;
-
-        slidesContent.forEach((content, i) => {
-            if (i === index) {
-                content.classList.add('active');
-            } else {
-                content.classList.remove('active');
-            }
-        });
-
-        slides.forEach((slide, i) => {
-            console.log(index)
-            if (i === prevIndex) {
-                slide.style.transform = `translateX(-${(index - 1) * 100 + 33}%)`;
-            } else if (i === index) {
-                slide.style.transform = `translateX(-${(index - 1) * 100}%)`;
-            } else if (i === nextIndex) {
-                slide.style.transform = `translateX(${(index - 1)  * 33}%)`;
-            }
+        slides.forEach((slide) => {
+            slide.style.transform = `translateX(-${index * 100}%)`;
         });
     }
 
@@ -57,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     prevBtn.addEventListener('click', prevSlide);
     nextBtn.addEventListener('click', nextSlide);
 
+    // Create dots
     for (let i = 0; i < totalSlides; i++) {
         const dot = document.createElement('span');
         dot.classList.add('dot');
@@ -72,25 +54,33 @@ document.addEventListener('DOMContentLoaded', function () {
     const dots = document.querySelectorAll('.dot');
     updateDots(currentIndex);
 
+    // Swipe functionality
     let touchstartX = 0;
     let touchendX = 0;
-    const minSwipeDistance = 20;
-    carousel.addEventListener('touchstart', function (event) {
+    const minSwipeDistance = 50; // La distance minimale de glissement pour déclencher le changement de diapositive
+
+    carousel.addEventListener('touchstart', function(event) {
         touchstartX = event.changedTouches[0].screenX;
     });
 
-    carousel.addEventListener('touchend', function (event) {
+    carousel.addEventListener('touchend', function(event) {
         touchendX = event.changedTouches[0].screenX;
         handleGesture();
     });
 
-    carousel.addEventListener('mousedown', function (event) {
+    carousel.addEventListener('mousedown', function(event) {
         isDragging = true;
         mouseX = event.clientX;
         mouseY = event.clientY;
     });
 
-    carousel.addEventListener('mouseup', function (event) {
+    carousel.addEventListener('mousemove', function(event) {
+        if (isDragging) {
+            event.preventDefault();
+        }
+    });
+
+    carousel.addEventListener('mouseup', function(event) {
         if (isDragging) {
             const distanceX = event.clientX - mouseX;
             const distanceY = event.clientY - mouseY;
@@ -105,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    carousel.addEventListener('mouseleave', function (event) {
+    carousel.addEventListener('mouseleave', function(event) {
         isDragging = false;
     });
 
