@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
         slides.forEach((slide) => {
             slide.style.transform = `translateX(-${index * 100}%)`;
         });
+        updateDots(index);
+        updateNavigationButtons();
     }
 
     function updateDots(index) {
@@ -25,17 +27,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function updateNavigationButtons() {
+        prevBtn.style.display = currentIndex === 0 ? 'none' : 'block';
+        nextBtn.style.display = currentIndex === totalSlides - 1 ? 'none' : 'block';
+    }
+
     function prevSlide() {
         currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
         showSlide(currentIndex);
-        updateDots(currentIndex);
         startAutoSlide();
     }
 
     function nextSlide() {
         currentIndex = (currentIndex + 1) % totalSlides;
         showSlide(currentIndex);
-        updateDots(currentIndex);
         startAutoSlide();
     }
 
@@ -47,9 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const dot = document.createElement('span');
         dot.classList.add('dot');
         dot.addEventListener('click', () => {
-            showSlide(i);
             currentIndex = i;
-            updateDots(i);
+            showSlide(currentIndex);
             startAutoSlide();
         });
         dotsContainer.appendChild(dot);
@@ -57,11 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const dots = document.querySelectorAll('.dot');
     updateDots(currentIndex);
+    updateNavigationButtons();
 
     // Swipe functionality
     let touchstartX = 0;
     let touchendX = 0;
-    const minSwipeDistance = 50; // La distance minimale de glissement pour déclencher le changement de diapositive
+    const minSwipeDistance = 50;
 
     carousel.addEventListener('touchstart', function(event) {
         touchstartX = event.changedTouches[0].screenX;
