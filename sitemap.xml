@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://ninolefort.fr/index.html</loc>
+        <loc>https://nino-lefort.netlify.app/index.html</loc>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://ninolefort.fr/contact.html</loc>
+        <loc>https://nino-lefort.netlify.app/contact.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://ninolefort.fr/projet.html</loc>
+        <loc>https://nino-lefort.netlify.app/projet.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://ninolefort.fr/propos.html</loc>
+        <loc>https://nino-lefort.netlify.app/propos.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://ninolefort.fr/mentions.html</loc>
+        <loc>https://nino-lefort.netlify.app/mentions.html</loc>
         <priority>0.1</priority>
     </url>
 

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ninolefort.fr/sitemap.xml
+Sitemap: https://nino-lefort.netlify.app/sitemap.xml
